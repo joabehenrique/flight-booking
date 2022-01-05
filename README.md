@@ -67,10 +67,10 @@ We thank the following people who contributed to this project:
 
 ## 😄 Be one of the contributors<br>
 
-Do you want to be part of this project? Click [here](https://github.com/joabehenrique/flight-booking/blob/main/CONTRIBUTING.md) and read how to contribute.
+Do you want to be part of this project? Click [here](https://github.com/joabehenrique/flight-booking/blob/master/CONTRIBUTING.md) and read how to contribute.
 
 ## 📝 License
 
-This project is under license. See the [license](https://github.com/joabehenrique/flight-booking/blob/main/LICENSE.md) file for more details.
+This project is under license. See the [license](https://github.com/joabehenrique/flight-booking/blob/master/LICENSE.md) file for more details.
 
 [⬆ Back to top](#FlightBooking)<br>
