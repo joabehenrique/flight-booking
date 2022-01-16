@@ -1,4 +1,4 @@
-# [:hammer_and_wrench: Working..] Flight Booking
+# [:hammer_and_wrench: Working..] Flightex
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joabehenrique/flight-booking?style=flat)
 ![GitHub language count](https://img.shields.io/github/languages/count/joabehenrique/flight-booking?style=flat)
@@ -43,7 +43,7 @@ To contribute to Exlivery, follow these steps:
 1. Fork this repository.
 2. Create a branch: `git checkout -b <nome_branch>`.
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Send to the original branch: `git push origin Exlivery / <local>`
+4. Send to the original branch: `git push origin Flightex / <local>`
 5. Create the pull request.
 
 Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)..
@@ -73,4 +73,4 @@ Do you want to be part of this project? Click [here](https://github.com/joabehen
 
 This project is under license. See the [license](https://github.com/joabehenrique/flight-booking/blob/master/LICENSE.md) file for more details.
 
-[⬆ Back to top](#FlightBooking)<br>
+[⬆ Back to top](#Flightex)<br>
