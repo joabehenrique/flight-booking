@@ -1,21 +1,21 @@
-# FlightBooking
+# Flightex
 
 **TODO: Add description**
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `flight_booking` to your list of dependencies in `mix.exs`:
+by adding `Flightex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:flight_booking, "~> 0.1.0"}
+    {:Flightex, "~> 0.1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/flight_booking](https://hexdocs.pm/flight_booking).
+be found at [https://hexdocs.pm/Flightex](https://hexdocs.pm/Flightex).
 
