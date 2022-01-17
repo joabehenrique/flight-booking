@@ -61,4 +61,31 @@ defmodule Flightex.Bookings.AgentTest do
       assert response == expected_response
     end
   end
+
+  describe "get_all/0" do
+    setup do
+      BookingsAgent.start_link(%{})
+
+      {:ok, id: UUID.uuid4()}
+    end
+
+    test "when called, return list of all bookings", %{id: id} do
+      booking = build(:booking, id: id)
+      {:ok, _uuid} = BookingsAgent.save(booking)
+
+      response = BookingsAgent.get_all()
+
+      expected_response = %{
+        "12345678900" => %Flightex.Bookings.Booking{
+          complete_date: ~N[2001-05-07 03:05:00],
+          id: id,
+          local_destination: "Bananeiras",
+          local_origin: "Brasilia",
+          user_id: "12345678900"
+        }
+      }
+
+      assert response == expected_response
+    end
+  end
 end
