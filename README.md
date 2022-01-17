@@ -1,4 +1,4 @@
-# [:hammer_and_wrench: Working..] Flightex
+# [:rocket: Finishing..] Flightex
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joabehenrique/flight-booking?style=flat)
 ![GitHub language count](https://img.shields.io/github/languages/count/joabehenrique/flight-booking?style=flat)
