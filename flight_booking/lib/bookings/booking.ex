@@ -1,6 +1,6 @@
 defmodule Flightex.Bookings.Booking do
   @moduledoc """
-    Modulo para a criacao do reservas e seu gerenciamento
+    Modulo para a criacao de reservas e seu gerenciamento
   """
 
   alias Flightex.Users.User
@@ -11,14 +11,14 @@ defmodule Flightex.Bookings.Booking do
 
   defstruct @keys
 
-  def build(complete_date, local_origin, local_destination, %User{cpf: cpf}) do
+  def build(%NaiveDateTime{} = complete_date, local_origin, local_destination, id) do
     {:ok,
      %__MODULE__{
        id: UUID.uuid4(),
        complete_date: complete_date,
        local_origin: local_origin,
        local_destination: local_destination,
-       user_id: cpf
+       user_id: id
      }}
   end
 
