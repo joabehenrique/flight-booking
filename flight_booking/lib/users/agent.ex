@@ -6,12 +6,12 @@ defmodule Flightex.Users.Agent do
 
   alias Flightex.Users.User
 
-  def start, do: Agent.start_link(fn -> %{} end, name: __MODULE__)
+  def start_link(%{}), do: Agent.start_link(fn -> %{} end, name: __MODULE__)
 
-  def increment_user(%User{} = user),
+  def save(%User{} = user),
     do: Agent.update(__MODULE__, fn agent_state -> increment(agent_state, user) end)
 
-  def get_user(cpf),
+  def get(cpf),
     do: Agent.get(__MODULE__, fn agent_state -> get_user_cpf(agent_state, cpf) end)
 
   defp increment(agent, %User{cpf: cpf} = user), do: Map.put(agent, cpf, user)

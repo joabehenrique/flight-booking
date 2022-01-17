@@ -9,6 +9,8 @@ defmodule Flightex.Users.User do
 
   defstruct @keys
 
+  def build(_name, _email, cpf) when is_integer(cpf), do: {:error, "Cpf must be a String"}
+
   def build(name, email, cpf) do
     {:ok,
      %__MODULE__{
