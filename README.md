@@ -78,10 +78,10 @@ Searching the reserve created
 {:ok,
  %FlightBooking.Bookings.Booking{
    date: ~N[2021-08-10 11:48:31.757414],
-   destination: "sao paulo",
-   origin: "aracaju",
+   destination: "RJ",
+   origin: "SP",
    user_id: "d42b7ff7-f907-4a1c-8c3a-484e5324e828",
-   user_name: "any"
+   user_name: "name"
  }}
 
 ```
