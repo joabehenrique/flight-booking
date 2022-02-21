@@ -1,4 +1,4 @@
-# [:rocket: Finishing..] Flightex
+# 🚀 Flightex
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joabehenrique/flight-booking?style=flat)
 ![GitHub language count](https://img.shields.io/github/languages/count/joabehenrique/flight-booking?style=flat)
@@ -6,34 +6,84 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/joabehenrique/flight-booking?style=flat)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/joabehenrique/flight-booking?style=flat)
 
-> Simple project developed ...
+> Project developed during the Elixir track on the Rocketseat platform.
 
 ## 💻 Requirements
 
 Before you begin, make sure you have met the following requirements:
 
-- You need the latest version of `...` on your machine.
+- You need the latest version of `Elixir` on your machine.
 
-If you need installation instructions, [click here]("...").
+If you need installation instructions, [click here](https://elixir-lang.org/install.html).
 
-## 🚀 Installing ...
+## 🚀 Installing Flightex
 
-To install ..., follow these steps:
+To install Flightex, follow these steps:
 
 1º Clone the repository.
 
 ```
 >  git clone https://github.com/joabehenrique/flight-booking.git
 ```
-
-## ☕ Using ...
-
-To use ..., follow these steps:
-
+2º Navigate to the project folder.
 ```
-Project is a challenge to create an interface(Landing Page) with a contact form and apply some functionality with JavaScript.
+>  cd rocketseat-exlivery/exlivery
+```
+3º Use the command below to download the dependencies.
+```
+>  mix deps.get
+```
+4º Use the command below to run the project.
+```
+>  iex -S mix
+```
+## ☕ Using Flightex
 
-The challenge is extremely simple, since it is the first one and at a beginner level.
+To use Flightex, follow these steps:
+
+Creating a user and your application. 
+```
+> FlightBooking.start_agents
+```
+```
+> {:ok, user} = %{name: "name", email: "name@email.com", cpf: "12345678900"}
+
+> FlightBooking.create_or_update_user(user)
+```
+Searching created user
+```
+> FlightBooking.get_user "d42b7ff7-f907-4a1c-8c3a-484e5324e828"
+
+{:ok,
+ %FlightBooking.Users.User{
+   cpf: "12345678900",
+   email: "name@email.com",
+   name: "name"
+ }}
+```
+Searching all users 
+```
+> FlightBooking.get_all_users
+```
+Creating a booking
+```
+> {:ok, booking} = %{user_id: "d42b7ff7-f907-4a1c-8c3a-484e5324e828", date: NaiveDateTime.utc_now(), origin: "SP", destination: "RJ"}
+
+> FlightBooking.create_or_update_booking(booking)
+```
+Searching the reserve created
+```
+> FlightBooking.get_booking("a8a6d868-b78f-4bd1-9da1-7454728a1955")
+
+{:ok,
+ %FlightBooking.Bookings.Booking{
+   date: ~N[2021-08-10 11:48:31.757414],
+   destination: "sao paulo",
+   origin: "aracaju",
+   user_id: "d42b7ff7-f907-4a1c-8c3a-484e5324e828",
+   user_name: "any"
+ }}
+
 ```
 
 ## 📫 Contributing to Exlivery
@@ -72,5 +122,3 @@ Do you want to be part of this project? Click [here](https://github.com/joabehen
 ## 📝 License
 
 This project is under license. See the [license](https://github.com/joabehenrique/flight-booking/blob/master/LICENSE.md) file for more details.
-
-[⬆ Back to top](#Flightex)<br>
