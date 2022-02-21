@@ -67,7 +67,12 @@ Searching all users
 ```
 Creating a booking
 ```
-> {:ok, booking} = %{user_id: "d42b7ff7-f907-4a1c-8c3a-484e5324e828", date: NaiveDateTime.utc_now(), origin: "SP", destination: "RJ"}
+> {:ok, booking} = %{
+    user_id: "d42b7ff7-f907-4a1c-8c3a-484e5324e828", 
+    date: NaiveDateTime.utc_now(), 
+    origin: "SP", 
+    destination: "RJ"
+  }
 
 > FlightBooking.create_or_update_booking(booking)
 ```
